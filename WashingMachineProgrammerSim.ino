@@ -128,55 +128,55 @@ void loop()
 }
 
 void printProgramme(int i){
-  	//programme name in first row
+  //programme name in first row
 	lcd.print(programmes[i]);
   
-  	//time in second row
-    lcd.setCursor(0,2);
-    lcd.print(hours[i]);
-    lcd.print(":");
-  	if(minutes[i]<10){
-      lcd.print(0);
-  	}
-    lcd.print(minutes[i]);
+  //time in second row
+  lcd.setCursor(0,2);
+  lcd.print(hours[i]);
+  lcd.print(":");
+  if(minutes[i]<10){
+    lcd.print(0);
+  }
+  lcd.print(minutes[i]);
   
-  	//options
-  	checkIfPressed(btnStart, pressedStart);
-  	checkIfPressed(btnRinse, pressedRinse);
-  	checkIfPressed(btnFast, pressedFast);
-  	checkIfPressed(btnRPM, pressedRPM);
-  	checkIfPressed(btnStopSpin, pressedStopSpin);
+  //options
+  checkIfPressed(btnStart, pressedStart);
+  checkIfPressed(btnRinse, pressedRinse);
+  checkIfPressed(btnFast, pressedFast);
+  checkIfPressed(btnRPM, pressedRPM);
+  checkIfPressed(btnStopSpin, pressedStopSpin);
   
-  	int j = 15;
-  	lcd.setCursor(j,2);
+  int j = 15;
+  lcd.setCursor(j,2);
   	
-  	if(pressedStart){
-  		timer(value);
-  	}
+  if(pressedStart){
+  	timer(value);
+  }
  
-  	if(pressedStopSpin){
-  		lcd.print("S");
-      	j--;
-      	lcd.setCursor(j,2);
-    }
+  if(pressedStopSpin){
+  	lcd.print("S");
+    j--;
+    lcd.setCursor(j,2);
+  }
   
-  	if(pressedRPM){
-  		lcd.print("6");
-      	j--;
-      	lcd.setCursor(j,2);
+  if(pressedRPM){
+  	lcd.print("6");
+    j--;
+    lcd.setCursor(j,2);
 	}
   
-  	if(pressedFast){
-  		lcd.print("F");
-      	j--;
-      	lcd.setCursor(j,2);
-  	}
+  if(pressedFast){
+  	lcd.print("F");
+    j--;
+    lcd.setCursor(j,2);
+  }
   
-  	if(pressedRinse){
-  		lcd.print("R");
-      	j--;
-      	lcd.setCursor(j,2);
-  	}
+  if(pressedRinse){
+  	lcd.print("R");
+    j--;
+    lcd.setCursor(j,2);
+  }
   	
 }
 
@@ -195,8 +195,8 @@ void timer(int i){
 	secs--;
 	
   	if (minutes[i] == 0 && hours[i] == 0) {
-		pressedStart = false;
-      	return;
+      pressedStart = false;
+      return;
 	}
   	
 	if (secs == 0) {
