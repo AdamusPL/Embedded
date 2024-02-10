@@ -23,7 +23,7 @@ String programmes[16]=
 {
   "Odpompowanie",
   "Welna 30",
-  "Reczna zimna",
+  "Reczne zimna",
   "Delikatne 30",
   "Syntetyki 60",
   "Syntetyki 40",
