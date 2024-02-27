@@ -21,22 +21,22 @@ bool pressedStopSpin = false;
 //array with programme names
 String programmes[16]=
 {
-  "Odpompowanie",
-  "Welna 30",
-  "Reczne zimna",
-  "Delikatne 30",
-  "Syntetyki 60",
-  "Syntetyki 40",
-  "Syntetyki 30",
+  "Drain",
+  "Wool 30",
+  "Hand-wash cold",
+  "Delicates 30",
+  "Synthetics 60",
+  "Synthetics 40",
+  "Synthetics 30",
   "OFF",
-	"Bawelna 30",
-  "Bawelna 40",
-  "Bawelna 60",
-  "Intensywne 60",
-  "Bawelna 90",
-  "Wstepne 60",
-  "Plukanie",
-  "Wirowanie"
+	"Cottons 30",
+  "Cottons 40",
+  "Cottons 60",
+  "Intensive 60",
+  "Cottons 90",
+  "Pre-wash 60",
+  "Rinse",
+  "Spin"
 };
 
 
